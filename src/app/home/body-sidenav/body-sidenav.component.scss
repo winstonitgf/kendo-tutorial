@@ -1,0 +1,27 @@
+.sidenav-container {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav {
+  width: 20%;
+}
+
+.sidenav-session-list {
+  text-decoration: none;
+  color: #4d4f52;
+}
+
+.sidenav-list-item {
+  padding-left: 10px !important;
+}
+
+.active-list-item {
+  background-color: #ee6e73;
+  a {
+    color: white;
+  }
+}

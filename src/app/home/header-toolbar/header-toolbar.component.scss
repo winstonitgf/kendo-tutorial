@@ -1,0 +1,14 @@
+.header-toolbar{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #f5f6f7;
+  color: #4d4f52;
+}
+.header-toolbar-spacer{
+  flex: 1 1 auto;
+}
+.header-toolbar-icon{
+  padding-right: 10px;
+  cursor: pointer;
+}

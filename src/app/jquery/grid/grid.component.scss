@@ -1,0 +1,71 @@
+h1,
+h3 {
+  margin-left: 2%;
+}
+
+h4 {
+  margin-left: 4%;
+}
+
+div {
+  margin-left: 2%;
+}
+
+.install-guide-photo {
+  margin-left: 13%;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  // text-decoration:none;
+  // color: teal;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 5px;
+}
+
+.menu li span {
+  text-decoration: none;
+  position: relative;
+  color: #313131;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: block;
+  transition: 0.7s all;
+  padding: 14px 20px;
+  // text-transform: uppercase;
+}
+
+.menu li a {
+  text-decoration: none;
+  position: relative;
+  color: teal;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+  overflow: hidden;
+  display: block;
+  transition: 0.7s all;
+  padding: 14px 20px;
+  // text-transform: uppercase;
+}
+
+.menu li a:before {
+  content: "";
+  width: 60px;
+  position: absolute;
+  border-bottom: 2px solid #313131;
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+
+.menu li a:hover:before {
+  right: 0;
+}

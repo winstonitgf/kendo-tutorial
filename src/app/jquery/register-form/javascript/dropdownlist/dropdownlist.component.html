@@ -1,0 +1,64 @@
+<div>
+  <pre>
+  var city = [
+    {{ "{" }} text: "台北", parentId: 1 {{ "}" }},
+    {{ "{" }} text: "台中", parentId: 2 {{ "}" }},
+    {{ "{" }} text: "台南", parentId: 3 {{ "}" }}
+  ];
+  var unit = [
+    {{ "{" }} parentId: 1, text: "中正區", value: "1" {{ "}" }},
+    {{ "{" }} parentId: 1, text: "信義區", value: "2" {{ "}" }},
+    {{ "{" }} parentId: 1, text: "南港區", value: "3" {{ "}" }},
+    {{ "{" }} parentId: 2, text: "西屯區", value: "4" {{ "}" }},
+    {{ "{" }} parentId: 2, text: "大里區", value: "5" {{ "}" }},
+    {{ "{" }} parentId: 2, text: "北屯區", value: "6" {{ "}" }},
+    {{ "{" }} parentId: 3, text: "關廟區", value: "7" {{ "}" }},
+    {{ "{" }} parentId: 3, text: "仁德區", value: "8" {{ "}" }},
+    {{ "{" }} parentId: 3, text: "新營區", value: "9" {{ "}" }}
+  ];
+      </pre>
+</div>
+<div style="margin-left: 20px;">
+  <span class="tag">$(</span>
+  <span class="atn">"#address-city"</span>
+  <span class="tag">).kendoDropDownList({{ "{" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataTextField: </span>
+  <span class="atv">"text",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataValueField: </span>
+  <span class="atv">"parentId",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataSource: </span>
+  <span class="atv">city,</span>
+</div>
+<div style="margin-left: 20px;">
+  <span>{{ "}" }});</span>
+</div>
+<div style="margin-left: 20px;">
+  <span class="tag">$(</span>
+  <span class="atn">"#address-unit"</span>
+  <span class="tag">).kendoDropDownList({{ "{" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">cascadeFrom: </span>
+  <span class="atv">"address-city",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataTextField: </span>
+  <span class="atv">"text",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataValueField: </span>
+  <span class="atv">"value",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataSource: </span>
+  <span class="atv">unit,</span>
+</div>
+<div style="margin-left: 20px;">
+  <span>{{ "}" }});</span>
+</div>

@@ -1,0 +1,38 @@
+<div>
+  <pre>
+  var intrest = [
+    {{ "{" }}
+      text: "大學", expanded: true, items: [
+        {{ "{" }} text: "四技" {{ "}" }},
+        {{ "{" }} text: "二專" {{ "}" }},
+      ]
+    },
+    {{ "{" }}
+      text: "高中", items: [
+        {{ "{" }} text: "一般高中" {{ "}" }},
+        {{ "{" }} text: "高職" {{ "}" }},
+      ]
+    {{ "}" }}
+  ]
+  </pre>
+</div>
+<div style="margin-left: 20px;">
+  <span class="tag">$(</span>
+  <span class="atn">"#intrest"</span>
+  <span class="tag">).kendoDropDownTree({{ "{" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">placeholder: </span>
+  <span class="atv">"Select ...",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">height: </span>
+  <span class="atv">"auto",</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">dataSource: </span>
+  <span class="atv">intrest,</span>
+</div>
+<div style="margin-left: 20px;">
+  <span>{{ "}" }})</span>
+</div>

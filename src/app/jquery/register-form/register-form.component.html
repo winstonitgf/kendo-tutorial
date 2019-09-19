@@ -1,0 +1,338 @@
+<div id="top"></div>
+<h3>
+  在現實的情境上，表單的應用相當常見，這一章節我們來試用Kendo元件能帶來什麼樣的效果
+  <br />
+  此內容等級為基礎教學，幫助剛起手html、jquery的使用者快速上手
+</h3>
+<h3>
+  本範例先建立了簡單的架構如下圖 <br />
+  1. 我們可以從上一章節下載到的程式包找到下列的程式檔 <br />
+  2. 建立兩個檔案至專案中
+</h3>
+<h4 style="margin-left: 5%">1. css/registry.css</h4>
+<h4 style="margin-left: 5%">2. js/registry.js</h4>
+<img class="install-guide-photo" width="70%" src="assets/jquery/add-file.png" />
+
+<h3>
+  在下列三個檔案中，先建立基礎代碼，如下
+</h3>
+<mat-card class="source-code-tab-card">
+  <mat-tab-group class="tab-source-code-background">
+    <mat-tab label="index.html">
+      <app-basic-layout></app-basic-layout>
+    </mat-tab>
+    <mat-tab label="register.css">
+      <app-basic-css></app-basic-css>
+    </mat-tab>
+    <mat-tab label="register.js">
+      <app-basic-javascript></app-basic-javascript>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
+
+<h3>
+  開始於我們的表單中，加入一些Kendo元素於
+  <span><</span> li <span>></span>中
+</h3>
+<h4 style="margin-left: 5%">
+  1. 姓名 - TextBox - 加入
+  <span style="text-decoration: underline;text-decoration-color: red;"
+    >k-textbox
+  </span>
+  於 class 中
+  <br />
+  2. 生日 - DatePicker - 先定義id屬性，稍後於js處理 <br />
+  3. 性別 - Radio - 加入
+  <span style="text-decoration: underline;text-decoration-color: red;"
+    >k-radio
+  </span>
+  於 class 中 <br />
+  以下幾個html範例中，做法與此雷同，可以依此類推，所以不會再贅述
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-first></app-kendo-first>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  4. 學歷 - DropDownTree <br />
+  5. 就學期間 - DateRangePicker
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-second></app-kendo-second>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  6. 連絡電話 - MaskedTextBox <br />
+  7. 城市/鄉鎮 - DropDownList <br />
+  8. 街道地址 - TextBox
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-third></app-kendo-third>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  9. 電子郵件(帳號) - TextBox <br />
+  10. 密碼設定 - TextBox
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-fourth></app-kendo-fourth>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  11. 照片上傳 - Upload <br />
+  12. 訂閱通知 - Switch
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-fifth></app-kendo-fifth>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  13. 確認/取消 - Button <br />
+  14. 成功/失敗訊息 - Notification
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-sixth></app-kendo-sixth>
+</mat-card>
+
+<h3>
+  接著我們補上JS代碼
+</h3>
+<h4 style="margin-left: 5%">
+  1. DropDownTree
+</h4>
+<h5 style="margin-left: 8%">
+  需要提供object並含有key、value，可以特別指定，或是其他需求，可以試著參考連結，並實作看看
+</h5>
+<h4 style="margin-left: 5%">
+  2. DatePicker
+</h4>
+<h5 style="margin-left: 8%">
+  額外如需設定日期格式、最大、最小值等等的客製需求，可以參考連結，並實作看看
+</h5>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/datepicker/index"
+        target="_blank"
+        >DatePicker用法
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker#configuration"
+        target="_blank"
+        >DatePicker參數
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/dropdowntree/index"
+        target="_blank"
+        >DropDownTree用法
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/dropdowntree#configuration"
+        target="_blank"
+        >DropDownTree參數
+      </a>
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-seventh></app-kendo-seventh>
+</mat-card>
+
+<h4 style="margin-left: 5%">3. DropDownList <br /></h4>
+<h5 style="margin-left: 8%">
+  a) 特別設定dataTextField、dataValueField屬性 <br />
+  b) 利用 Kendo 提供的連動式下拉功能 (cascadeFrom)
+</h5>
+<h4 style="margin-left: 5%">4. MaskedTextBox <br /></h4>
+<h5 style="margin-left: 8%">
+  需要設定其他遮罩格式，可以參考連結，並實作看看
+</h5>
+<h4 style="margin-left: 5%">
+  5. DateRangePicker
+</h4>
+<h5 style="margin-left: 8%">
+  額外如需設定日期格式、最大、最小值等等的客製需求，可以參考連結，並實作看看
+</h5>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/daterangepicker/index"
+        target="_blank"
+        >DropDownList用法</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/daterangepicker#configuration"
+        target="_blank"
+        >DropDownList參數</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/daterangepicker/index"
+        target="_blank"
+        >DateRangePicker用法</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/daterangepicker#configuration"
+        target="_blank"
+        >DateRangePicker參數</a
+      >
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-eighth></app-kendo-eighth>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  6. Switch <br />
+  7. Upload
+</h4>
+<h5 style="margin-left: 8%">
+  上傳檔案有非常多的功能，但需要搭配後端方能完整演示，目前你可以試著拉取任意檔案，並試著放上去看看成果
+</h5>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a href="https://demos.telerik.com/kendo-ui/upload/index" target="_blank"
+        >Upload用法
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/upload#configuration"
+        target="_blank"
+        >Upload參數
+      </a>
+    </li>
+    <li>
+      <a href="https://demos.telerik.com/kendo-ui/switch/index" target="_blank"
+        >Switch用法
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/switch#configuration"
+        target="_blank"
+        >Switch參數</a
+      >
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-ninth></app-kendo-ninth>
+</mat-card>
+
+<h4 style="margin-left: 5%">
+  8. Button <br />
+  9. Notification
+</h4>
+<h5 style="margin-left: 8%">
+  代碼主要是演示：<br />
+  a) 將通知功能先初始化 <br />
+  b) 透過按下確認鈕後，透過show來呈現通知效果 <br />
+  c) 幾秒後讓套件消失
+</h5>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/notification/index"
+        target="_blank"
+        >Notification用法
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/notification#configuration"
+        target="_blank"
+        >Notification參數
+      </a>
+    </li>
+    <li>
+      <a href="https://demos.telerik.com/kendo-ui/button/index" target="_blank"
+        >Button用法
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/button#configuration"
+        target="_blank"
+        >Button參數
+      </a>
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-kendo-tenth></app-kendo-tenth>
+</mat-card>
+<h3>重點整理</h3>
+<h4 style="margin-left: 5%">
+  1. 我們在html中建立好div，並定義好id名稱 <br />
+  2. 在js檔中，我們利用jquery幫我們做繫結，將id套用我們想用的kendo元件 <br />
+  3. 基本功能如不能符合需求，可以參考相關連結，並尋找您需要的功能參數 <br />
+  4. 在css中，定義好您想要的排版方式 <br />
+  5. 享受kendo UI帶來的便利
+</h4>
+<h3>成品截圖</h3>
+<img
+  class="install-guide-photo"
+  width="70%"
+  src="assets/jquery/form-presentation.png"
+/>
+<h3>完整代碼</h3>
+<h4 style="margin-left: 5%">
+  我們也將程式放上了
+  <a
+    style="text-decoration: none;"
+    href="https://github.com/AccesssoftTW/kendo-jquery-form"
+    target="blank"
+  >
+    GITHUB
+  </a>
+</h4>
+<mat-card class="source-code-tab-card">
+  <mat-tab-group class="tab-source-code-background">
+    <mat-tab label="index.html">
+      <app-kendo-first></app-kendo-first>
+      <app-kendo-second></app-kendo-second>
+      <app-kendo-third></app-kendo-third>
+      <app-kendo-fourth></app-kendo-fourth>
+      <app-kendo-fifth></app-kendo-fifth>
+      <app-kendo-sixth></app-kendo-sixth>
+    </mat-tab>
+    <mat-tab label="register.css">
+      <app-basic-css></app-basic-css>
+    </mat-tab>
+    <mat-tab label="register.js">
+      <app-kendo-seventh></app-kendo-seventh>
+      <app-kendo-eighth></app-kendo-eighth>
+      <app-kendo-ninth></app-kendo-ninth>
+      <app-kendo-tenth></app-kendo-tenth>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

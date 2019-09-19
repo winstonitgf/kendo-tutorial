@@ -1,0 +1,45 @@
+<div style="margin-left: 20px;">
+  <span class="tag">var </span>
+  <span class="atn">staticNotification</span>
+  <span> = </span>
+  <span class="tag">$(</span>
+  <span class="atn">"#staticNotification"</span>
+  <span class="tag">).kendoNotification({{ "{" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">appendTo:</span>
+  <span class="atv">"#appendto"</span>
+</div>
+<div style="margin-left: 20px;">
+  {{ "})" }}
+  <span class="tag">.data(</span>
+  <span class="atv">"kendoNotification"</span>
+  <span class="tag">);</span>
+</div>
+<div style="margin-left: 20px;">
+  <span class="tag">$(</span>
+  <span class="atn">"#confirm-button"</span>
+  <span class="tag">).click(function(){{ "{" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">staticNotification.</span>
+  <span class="atn">show(</span>
+  <span class="atv">"成功", "success"</span>
+  <span class="tag">);</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="tag">var </span>
+  <span class="atn">container</span>
+  <span> = </span>
+  <span class="tag">$(</span>
+  <span class="atn">staticNotification.options.appendTo</span>
+  <span class="tag">);</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn">container.scrollTop(</span>
+  <span class="atv">container[0].scrollHeight</span>
+  <span class="tag">);</span>
+</div>
+<div style="margin-left: 20px;">
+  {{ "})" }};
+</div>

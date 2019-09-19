@@ -1,0 +1,26 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="sidenav" mode="side" [opened]="panelOpenState">
+    <mat-list>
+      <div *ngFor="let sessionListData of sessionListDatas">
+        <h3 mat-subheader>{{ sessionListData.name }}</h3>
+        <mat-list-item
+          class="sidenav-list-item"
+          routerLinkActive="active-list-item"
+          *ngFor="let list of sessionListData.lists"
+        >
+          <a
+            class="sidenav-session-list"
+            routerLink="{{ list.route }}"
+            mat-line
+            >{{ list.name }}</a
+          >
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

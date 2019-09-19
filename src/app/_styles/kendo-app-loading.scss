@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  height: 95%;
+}
+.app-loading {
+  .logo {
+    width: 100px;
+    height: 100px;
+
+    // this way asset gets processed by webpack
+    background: url("data:image/png;base64,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")
+      center center no-repeat;
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.app-loading .spinner {
+  height: 200px;
+  width: 200px;
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.app-loading .spinner .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #ddd;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}

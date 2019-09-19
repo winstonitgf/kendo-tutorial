@@ -1,0 +1,220 @@
+<h3>
+  資料最基本的CRUD在一個系統佔了很大的比例，但如果套用Kendo
+  Grid一切都會變得相當容易
+</h3>
+<h3>
+  我們大致上需要下面三個檔案
+</h3>
+<h4>
+  1. jszip.min.js - Kendo提供 <br />
+  2. products.js - 假資料 <br />
+  3. gird.js - 實作程式
+</h4>
+<h3>
+  然後我們可以參考下方範例，開始我們的演示
+</h3>
+<mat-card class="source-code-tab-card">
+  <mat-tab-group class="tab-source-code-background">
+    <mat-tab label="index.html">
+      <app-pre-request-html></app-pre-request-html>
+    </mat-tab>
+    <mat-tab label="grid.js">
+      <app-grid-init [show]="false"></app-grid-init>
+    </mat-tab>
+    <mat-tab label="專案結構">
+      <img src="assets/grid/grid-structure.png" />
+    </mat-tab>
+    <mat-tab label="product.js">
+      <app-pre-request-data></app-pre-request-data>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
+<h3>
+  Kendo Grid有相當多設定，我們會先從Datasource這一個部份開始看起
+</h3>
+<h3>
+  1. data - 資料來源
+</h3>
+<h4>
+  這邊是存放Grid需呈現資料的地方，或是未來也可以提供API路由(參考連結設定)
+</h4>
+<h3>2. pageSize</h3>
+<h4>設定一頁要顯示的筆數</h4>
+<h3>3. schema - 定義資料格式</h3>
+<h4>
+  這邊可以針對資料類型(bool、string、date)進行定義，讓套件可以自動幫你做對應類型的處理，也可以設定資料驗證
+</h4>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/grid/local-data-binding"
+        target="_blank"
+        >Local Data</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/grid/remote-data-binding"
+        target="_blank"
+        >Remote Data</a
+      >
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-grid-datasource></app-grid-datasource>
+</mat-card>
+<h3>
+  接下來我們進行Columns定義
+</h3>
+<h3>
+  1. field
+</h3>
+<h4>
+  定義要顯示Datasource中的哪一個欄位
+</h4>
+<h3>
+  2. title
+</h3>
+<h4>
+  如果不想要顯示資料欄位名稱，可以定義要顯示在畫面上的名稱
+</h4>
+<h3>
+  3. format
+</h3>
+<h4>
+  如果有數字、日期格式，可以定義呈現的格式
+</h4>
+<h3>
+  4. command
+</h3>
+<h4>
+  需要有編輯功能，需要用此屬性增加更新、刪除鈕
+</h4>
+<h3>
+  更多的功能設定我們可以參考下方的連結
+</h3>
+<h4></h4>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/columns"
+        target="_blank"
+        >Columns</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid/configuration/datasource"
+        target="_blank"
+        >Datasource</a
+      >
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-grid-columns></app-grid-columns>
+</mat-card>
+<h3>
+  我們目前定義好了
+</h3>
+<h4>
+  1. 資料來源，格式 - Datasource <br />
+  2. 欄位顯示、客製化設定 - Columns
+</h4>
+<h3>
+  接下來我們可以針對整個Grid做進一步的設定
+</h3>
+<h3>toolbar</h3>
+<h4>
+  可以設定要顯示在Grid上方的功能鈕 (新增、編輯、儲存、取消、Excel、PDF)
+</h4>
+<h3>editable</h3>
+<h4>
+  設定是否開放編輯，也可以在更進階設定批次修改
+</h4>
+<h3>pageable</h3>
+<h4>
+  設定顯示分頁，或是讓使用者自行輸入分頁筆數
+</h4>
+<h3>更多的功能可以參考下面代碼或是連結</h3>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://docs.telerik.com/kendo-ui/api/javascript/ui/grid"
+        target="_blank"
+      >
+        Grid
+      </a>
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-grid-config></app-grid-config>
+</mat-card>
+<h3>
+  在上面的範例中，Toolbar加入了PDF、Excel的下載鈕，但我們也可以進一步設定
+</h3>
+<h4>
+  <ul class="menu">
+    <li>
+      <span>相關連結：</span>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/grid/excel-export"
+        target="_blank"
+      >
+        Excel
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://demos.telerik.com/kendo-ui/grid/pdf-export"
+        target="_blank"
+      >
+        PDF
+      </a>
+    </li>
+  </ul>
+</h4>
+<mat-card class="source-code-card">
+  <app-grid-excel></app-grid-excel>
+  <app-grid-pdf></app-grid-pdf>
+</mat-card>
+<h3>成品</h3>
+<img class="install-guide-photo" width="70%" src="assets/grid/grid.png" />
+<h3>完整代碼</h3>
+<h4 style="margin-left: 5%">
+  我們也將程式放上了
+  <a
+    style="text-decoration: none;"
+    href="https://github.com/AccesssoftTW/kendo-jquery-grid"
+    >github</a
+  >
+</h4>
+<mat-card class="source-code-tab-card">
+  <mat-tab-group class="tab-source-code-background">
+    <mat-tab label="index.html">
+      <app-pre-request-html></app-pre-request-html>
+    </mat-tab>
+    <mat-tab label="grid.js">
+      <app-grid-init [show]="true"></app-grid-init>
+    </mat-tab>
+    <mat-tab label="product.js">
+      <app-pre-request-data></app-pre-request-data>
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
