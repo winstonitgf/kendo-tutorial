@@ -14,17 +14,8 @@ phases:
       - REPOSITORY_URI=064751547381.dkr.ecr.us-east-1.amazonaws.com/kendo
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
-  install:
-    runtime-versions:
-      nodejs: 10
-    commands:
-      - echo Installing source NPM dependencies...
-      - npm install
-      - npm install -g @angular/cli
   build:
     commands:
-      - echo Build started
-      - ng build
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t $REPOSITORY_URI:latest .

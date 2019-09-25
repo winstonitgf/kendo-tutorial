@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build",
+    "build": "ng build --prod",
     "publish-ngh": "ng build --prod --base-href \"https://winstonitgf.github.io/kendo-tutorial/\" && ngh ",
     "test": "ng test",
     "lint": "ng lint",
