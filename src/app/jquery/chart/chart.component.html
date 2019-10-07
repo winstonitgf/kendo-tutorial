@@ -2,9 +2,11 @@
   一個好的圖表在資料處理的最後，拌演一個很重要的角色，負責將數據圖像化的呈現。
   <br />
   Kendo提供了多類型的圖表，實作的方式大同小異，可以很簡單的更換想要的樣式。
+  <br />
+  這邊會用某圖表當例子，來解析相關的設定方式
 </h3>
 <h3>
-  一個圖表有以下幾個重點：
+  大部份的圖表都有以下幾個重點：
 </h3>
 <h4>
   1. Title - 圖表的標題 <br />
@@ -14,3 +16,16 @@
   5. ValueAxis - 組群資料呈現設定 <br />
   6. Other - 其他設定
 </h4>
+<mat-card class="source-code-tab-card">
+  <mat-tab-group class="tab-source-code-background">
+    <mat-tab label="index.html">
+      <app-pre-request-html></app-pre-request-html>
+    </mat-tab>
+    <mat-tab label="chart.js">
+      <app-chart-init [show]="false"></app-chart-init>
+    </mat-tab>
+    <mat-tab label="專案結構">
+      <img src="assets/chart/structure.png" />
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>
