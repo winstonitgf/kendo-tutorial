@@ -1,24 +1,47 @@
 <div style="margin-left: 20px;">
-        <span class="atn">{{ "title:" }}</span>
-        <span> {{ " {" }}</span>
-      </div>
-      <div style="margin-left: 40px;">
-        <span class="atn"> position:</span>
-        <span class="atv"> "bottom", </span>
-      </div>
-      <div style="margin-left: 40px;font-style:oblique;color:gray;">
-        <span> // </span>
-        <span> background:</span>
-        <span> "green", </span>
-      </div>
-      <div style="margin-left: 40px;font-style:oblique;color:gray;">
-        <span> // </span>
-        <span> labels: {{ " {" }}</span>
-        <span> "font": </span>
-        <span> "20px sans-serif", </span>
-        <span> "color": </span>
-        <span> "red"</span>
-        <span> {{ " }" }}</span>
-      </div>
-      <div style="margin-left: 20px;">{{ " }" }},</div>
-      
+  <span class="atn">{{ "seriesDefaults:" }}</span>
+  <span> {{ " {" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> type:</span>
+  <span class="atv"> "area", </span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 選用面積圖(預設)</span>
+  </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> area: </span>
+  {{ " {" }}
+  <span class="atn"> line: </span>
+  {{ " {" }}
+  <span class="atn"> style: </span>
+  <span class="atv"> "smooth" </span>
+  <span> {{ " }" }}</span>
+  <span> {{ " }" }}</span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 針對面積圖設定線條為流線型</span>
+  </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> labels: </span>{{ " {" }}
+  <span class="atn"> visible: </span>
+  <span class="atv"> true, </span>
+  <span class="atn"> background: </span>
+  <span class="atv"> "green"</span>
+  <span> {{ " }" }}</span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 值上方的標籤樣式</span>
+  </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> tooltip: </span>{{ " {" }}
+  <span class="atn"> visible: </span>
+  <span class="atv"> true, </span>
+  <span class="atn"> background: </span>
+  <span class="atv"> "green"</span>
+  <span> {{ " }" }}</span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 滑鼠的提示標籤樣式</span>
+  </span>
+</div>
+<div style="margin-left: 20px;">{{ " }" }},</div>
