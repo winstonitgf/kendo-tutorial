@@ -10,10 +10,10 @@
 </h3>
 <h4>
   1. Title - 圖表的標題 <br />
-  2. Legend - 組群標籤 <br />
-  3. Series - 組群資料樣本<br />
-  4. CategoryAxis - 組群分類設定 <br />
-  5. ValueAxis - 組群資料呈現設定 <br />
+  2. Legend - 群組標籤 <br />
+  3. Series - 群組資料樣本<br />
+  4. CategoryAxis - 群組分類設定 <br />
+  5. ValueAxis - 群組資料呈現設定 <br />
   6. Other - 其他設定
 </h4>
 <mat-card class="source-code-tab-card">
@@ -55,9 +55,12 @@
   SeriesDefaults
 </h3>
 <h4>
-  設定圖表的預設值。<br />
-  根據要顯示的圖表，進行對應的設定，稍後的設定如有重覆，則會蓋掉此設定 <br />
-  下面以面積圖，做一個基本示例，其他類型即依此類推
+  與Series(稍後提及)的設定可重複，預設值的概念。如有重複，Series則會覆蓋這裡的設定<br />
+  這個設定主要是針對，圖表的其他外觀設定，比如圖表樣式、圖表類型、提示、標籤樣式等等。
+  <br />
+  如此可以讓Series的設定專注於資料面的提供，不會讓設定值太過混亂。
+  <br />
+  下面以面積圖，做一個基本示例，其他類型即依此類推。
 </h4>
 <h4>
   1. type - 圖表類型 <br />
@@ -79,5 +82,20 @@
 </h3>
 <h4>
   提供圖表資料來源，而資料來源需搭配圖表類型提供之<br />
-  此設定可以提供多種類型資料，且定義多種類型的圖表顯示方式
+  此設定可以同時提供多種類型資料(折線、長條)，且定義多種類型(折線、長條)的圖表顯示方式，例如：
+  <a
+    href="https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/chart/configuration/series"
+    target="_blank"
+    >這裡
+  </a>
+  <br />
+  如果有圖表上的樣式顯示需求，或是需要覆蓋SeriesDefault的設定的話，可以參考<a
+    href="https://docs.telerik.com/kendo-ui/api/javascript/dataviz/ui/chart/configuration/series"
+    target="_blank"
+    >這裡 </a
+  >設定。<br />
+  不過我們盡可能的將此單純化的設定資料較佳，我們下面一樣以面積圖為示例
 </h4>
+<mat-card class="source-code-card">
+  <app-chart-series></app-chart-series>
+</mat-card>
