@@ -1,1 +1,17 @@
-<p>chart-tooltip works!</p>
+<div style="margin-left: 20px;">
+  <span class="atn">{{ "tooltip:" }}</span>
+  <span> {{ " {" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> visible:</span>
+  <span class="atv"> true, </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> format:</span>
+  <span class="atv"> {{ '"{0}%"' }}, </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> template:</span>
+  <span class="atv"> {{ '"#= series.name #: #= value #"' }}, </span>
+</div>
+<div style="margin-left: 20px;">{{ " }" }},</div>

@@ -1,1 +1,34 @@
-<p>chart-categoryaxis works!</p>
+<div style="margin-left: 20px;">
+  <span class="atn">{{ "categoryAxis:" }}</span>
+  <span> {{ " {" }}</span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> categories: </span>
+  {{ " [" }}
+  <span class="atv">
+    2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011
+  </span>
+  <span> {{ " ]" }}</span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 數值</span>
+  </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> majorGridLines: </span>{{ " {" }}
+  <span class="atn"> visible: </span>
+  <span class="atv"> false </span>
+  <span> {{ " }" }}</span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 是否顯示對齊線 </span>
+  </span>
+</div>
+<div style="margin-left: 40px;">
+  <span class="atn"> labels: </span>{{ " {" }}
+  <span class="atn"> rotation: </span>
+  <span class="atv"> "auto" </span>
+  <span> {{ " }" }}</span>
+  <span style="font-style:oblique;color:gray;">
+    <span> // 標籤反轉，文字太長可調整為90垂直顯示 </span>
+  </span>
+</div>
+<div style="margin-left: 20px;">{{ " }" }},</div>
