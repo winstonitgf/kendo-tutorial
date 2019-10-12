@@ -18,11 +18,11 @@
 </h4>
 <mat-card class="source-code-tab-card">
   <mat-tab-group class="tab-source-code-background">
-    <mat-tab label="index.html">
-      <app-pre-request-html></app-pre-request-html>
-    </mat-tab>
     <mat-tab label="chart.js">
       <app-chart-init [show]="false"></app-chart-init>
+    </mat-tab>
+    <mat-tab label="index.html">
+      <app-pre-request-html></app-pre-request-html>
     </mat-tab>
     <mat-tab label="專案結構">
       <img src="assets/chart/structure.png" />
@@ -157,4 +157,26 @@
 </h4>
 <mat-card class="source-code-card">
   <app-chart-tooltip></app-chart-tooltip>
+</mat-card>
+<h3>完成</h3>
+<img class="install-guide-photo" width="70%" src="assets/chart/chart.png" />
+
+<h3>完整代碼</h3>
+<h4 style="margin-left: 5%">
+  我們也將程式放上了
+  <a
+    style="text-decoration: none;"
+    href="https://github.com/AccesssoftTW/kendo-jquery-chart"
+    >GITHUB</a
+  >
+</h4>
+<mat-card class="source-code-tab-card">
+  <mat-tab-group class="tab-source-code-background">
+    <mat-tab label="chart.js">
+      <app-chart-init [show]="true"></app-chart-init>
+    </mat-tab>
+    <mat-tab label="index.html">
+      <app-pre-request-html></app-pre-request-html>
+    </mat-tab>
+  </mat-tab-group>
 </mat-card>
