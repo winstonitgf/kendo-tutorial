@@ -15,6 +15,7 @@ import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { RegisterFormModule } from "./jquery/register-form/register-form.module";
 import { GridModule } from "./jquery/grid/grid.module";
 import { ChartModule } from './jquery/chart/chart.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,9 +36,11 @@ import { ChartModule } from './jquery/chart/chart.module';
     LoadingProgressModule,
     RegisterFormModule,
     GridModule,
-    ChartModule
+    ChartModule,
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

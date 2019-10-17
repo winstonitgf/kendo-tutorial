@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy, Renderer2 } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthenticationService } from '../_service/authentication.service';
-import { first } from 'rxjs/operators';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -18,7 +17,6 @@ export class LoginComponent implements OnInit, OnDestroy {
     private renderer2: Renderer2,
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
-    private router: Router,
     private authenticationService: AuthenticationService) {
 
   }
@@ -50,12 +48,14 @@ export class LoginComponent implements OnInit, OnDestroy {
       return;
     }
 
-    if (this.f.username.value === 'elsa' && this.f.password.value === '12345') {
-      this.authenticationService.login(this.f.username.value, this.f.password.value);
-      this.router.navigate(['/home']);
-    } else {
-      alert('login failed');
-    }
+    this.authenticationService.login(this.f.username.value, this.f.password.value, this.returnUrl);
+
+    // if (this.f.username.value === 'elsa' && this.f.password.value === '12345') {
+    //   this.authenticationService.login(this.f.username.value, this.f.password.value, this.returnUrl);
+    //   this.router.navigate(['/home']);
+    // } else {
+    //   alert('login failed');
+    // }
 
     // 先暫時先不實作
     // this.authenticationService.login(this.f.username.value, this.f.password.value)
