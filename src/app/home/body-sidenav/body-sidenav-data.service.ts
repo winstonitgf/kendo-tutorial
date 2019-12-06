@@ -47,12 +47,12 @@ export class BodySidenavDataService {
       },
       {
         id: 3,
-        name: 'React',
+        name: 'Vue',
         lists: []
       },
       {
         id: 4,
-        name: 'Vue',
+        name: 'React',
         lists: []
       }
     ];
