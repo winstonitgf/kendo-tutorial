@@ -39,6 +39,10 @@ export class BodySidenavDataService {
             name: 'Grid',
             route: '/angular/grid'
           },
+          {
+            name: '行事歷',
+            route: '/angular/scheduler'
+          },
         ]
       },
       {
