@@ -30,14 +30,26 @@
         </mat-tab>
     </mat-tab-group>
 </mat-card>
-
 <h3>
-    啟用預設編輯
+    呈現格式
 </h3>
 <h4>
-    - 必要提供 kendoSchedulerReactiveEditing => Angular reactive form的驗證設定
+    - 如下圖中，加入對應格式 Scheduler 的 Component 即可以啟用此功能
     <br>
-    - 做法可以參考下方圖示
+    - 更多說明，請參考
+    <a target="blank" href="https://www.telerik.com/kendo-angular-ui/components/scheduler/views/">
+        這裡
+    </a>
+    <br>
+</h4>
+<img class="img-card" width="80%" src="assets/scheduler/kendo-scheduler-view.png" />
+<h3>
+    啟用編輯[預設]
+</h3>
+<h4>
+    - 先建立一個 FormGroup，假設是 createFormGroup，寫法如下
+    <br>
+    - [kendoSchedulerReactiveEditing]="createFormGroup"
 </h4>
 <img class="img-card" width="80%" src="assets/scheduler/kendo-scheduler-formgroup.png" />
 <h3>
@@ -46,25 +58,30 @@
 <h4>
     - 設定初始日期 [selectedDate]="selectedDate"
     <br>
-    - 提供 kendoSchedulerBinding 已建立的行事歷資料
+    - 提供 kendoSchedulerBinding 現有的行事歷資料
     <br>
     - 資料格式如下方圖示
 </h4>
 <img class="img-card" width="80%" src="assets/scheduler/kendo-scheduler-kendoSchedulerBinding.png" />
 <h3>
-    提供Kendo UI，自己定義的資料邏輯(service)
+    如果要提供客製化的資料處理邏輯給Kendo UI的做法是什麼呢?
 </h3>
 <h4>
-    - 自己的service 繼承 Kendo UI提供的 BaseEditService
+    - 建立自己的 service 實作邏輯，並繼承 Kendo UI 提供的 BaseEditService
     <br>
-    - 將資料來源改為service，並設定pipe為非同步。 [kendoSchedulerBinding]="editService.events | async"
+    - 需要將提供給 Kendo UI 的參數調整成以下
     <br>
-    - 一樣要提供 Angular reactive form。[kendoSchedulerReactiveEditing]="createFormGroup"
+    - [kendoSchedulerBinding]="editService.events | async"
     <br>
-    - [editService]="editService"
+    - [kendoSchedulerReactiveEditing]="createFormGroup"
     <br>
     - [modelFields]="editService.fields"
     <br>
-    - [loading]="editService.loading"
+    - [editService]="editService"
     <br>
+    - 完整範例代碼可以參考
+    <a target="blank"
+        href="https://www.telerik.com/kendo-angular-ui/components/scheduler/editing/editing-directives/#toc-custom-service">
+        這裡
+    </a>
 </h4>
