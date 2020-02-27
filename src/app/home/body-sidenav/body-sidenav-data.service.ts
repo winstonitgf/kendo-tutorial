@@ -15,19 +15,19 @@ export class BodySidenavDataService {
         lists: [
           {
             name: '環境準備',
-            route: '/jquery/install-guide'
+            route: '/home/jquery-install-guide'
           },
           {
             name: '表單',
-            route: '/jquery/register-form'
+            route: '/home/jquery-register-form'
           },
           {
             name: 'Grid',
-            route: '/jquery/grid'
+            route: '/home/jquery-grid'
           },
           {
             name: '圖表',
-            route: '/jquery/chart'
+            route: '/home/jquery-chart'
           }
         ]
       },
@@ -37,19 +37,19 @@ export class BodySidenavDataService {
         lists: [
           {
             name: 'Grid',
-            route: '/angular/grid'
+            route: '/home/angular-grid'
           },
           {
             name: '行事歷',
-            route: '/angular/scheduler'
+            route: '/home/angular-scheduler'
           },
           {
             name: '表單元件',
-            route: '/angular/input'
+            route: '/home/angular-input'
           },
           {
             name: '圖表',
-            route: '/angular/chart'
+            route: '/home/angular-chart'
           },
         ]
       },
@@ -59,32 +59,28 @@ export class BodySidenavDataService {
         lists: [
           {
             name: 'Grid',
-            route: '/vue/grid'
+            route: '/home/vue-grid'
           },
           {
             name: '圖表',
-            route: '/vue/chart'
+            route: '/home/vue-chart'
           },
           {
             name: '表單',
-            route: '/vue/form'
+            route: '/home/vue-form'
           },
           {
             name: '行事曆',
-            route: '/vue/scheduler'
+            route: '/home/vue-scheduler'
           },
         ]
-      },
-      // {
-      //   id: 4,
-      //   name: 'React',
-      //   lists: []
-      // }
+      }
     ];
   }
 
   public getProductsList() {
-    return [{ text: "Kendo", value: "kendo" }, { text: "Infragistics", value: "infragistics" }]
+    const list = [{ text: 'Kendo', value: 'kendo' }, { text: 'Infragistics', value: 'infragistics' }, { text: 'Admin', value: 'admin' }];
+    return list;
   }
 
   public getInfragisticsList() {
@@ -119,6 +115,21 @@ export class BodySidenavDataService {
           },
         ]
       }
+    ];
+  }
+
+  public getAdminList() {
+    return [
+      {
+        id: 1,
+        name: '用戶',
+        lists: [
+          {
+            name: '帳號設定',
+            route: '/home/admin-member-management'
+          },
+        ]
+      },
     ];
   }
 }
