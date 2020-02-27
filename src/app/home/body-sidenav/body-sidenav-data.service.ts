@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { AuthenticationService } from 'src/app/_service/authentication.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BodySidenavDataService {
 
-  constructor() { }
+  constructor(private authenticationService: AuthenticationService) { }
 
   public getKendoList() {
     return [
@@ -79,7 +80,13 @@ export class BodySidenavDataService {
   }
 
   public getProductsList() {
-    const list = [{ text: 'Kendo', value: 'kendo' }, { text: 'Infragistics', value: 'infragistics' }, { text: 'Admin', value: 'admin' }];
+    const list = [{ text: 'Kendo', value: 'kendo' }, { text: 'Infragistics', value: 'infragistics' }];
+
+    const currentUser = this.authenticationService.currentUserValue;
+    if (currentUser.account === 'admin') {
+      list.push({ text: 'Admin', value: 'admin' });
+    }
+
     return list;
   }
 
