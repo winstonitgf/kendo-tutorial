@@ -1,78 +1,131 @@
-<h3>Datedate-Inputs - 日期輸入</h3>
-<h4>日期輸入 - DateInput</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/DateInput_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/DateInput_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>日期選擇 - DatePicker</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/DatePicker_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/DatePicker_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>時間選擇 - TimePicker</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/TimePicker_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/TimePicker_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>日期時間選擇 - DateTimePicker</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/DateTimePicker_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/DateTimePicker_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>起訖日期選擇 - DateRangePicker</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/DateRangePicker_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/DateRangePicker_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>日曆 - Calendar</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/Calendar_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/Calendar_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>多視圖日曆 - MultiViewCalendar</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/date-inputs/MultiViewCalendar_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/date-inputs/MultiViewCalendar_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
+<div style="margin-bottom: 3%">
+    <h3>Datedate-Inputs - 日期輸入</h3>
+    <h4>1. 日期輸入 - DateInput</h4>
+    <h4>
+        - 可用鍵盤 <code>←</code><code>→</code> 切換年月日，<code>↑</code><code>↓</code> 選擇日期
+        <br>
+        - 用於日期起訖時間 <code>:min</code> 和 <code>:max</code>
+        <br>
+        - 用於指定格式顯示輸入的值 <code>:format</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/dateinput/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/DateInput_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/DateInput_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>2. 日期選擇 - DatePicker</h4>
+    <h4>
+        - 用於禁用日期 <code>:disable-dates</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/datepicker/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/DatePicker_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/DatePicker_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>3. 時間選擇 - TimePicker</h4>
+    <h4>
+        - 用於時間的格式 <code>:time</code>
+        <br>
+        - 用於間隔時間以分鐘為單位 <code>:interval</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/timepicker/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/TimePicker_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/TimePicker_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>4. 日期時間選擇 - DateTimePicker</h4>
+    <h4>
+        - 用於指定格式 <code>:parse-format</code>
+        <br>
+        - 指定日曆的顯示格式 <code>:depth</code>，請參考
+        <a href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/datetimepicker/active-view/">這裡</a>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/datetimepicker/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/DateTimePicker_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/DateTimePicker_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>5. 起訖日期選擇 - DateRangePicker</h4>
+    <h4>
+        - 用於指定格式 <code>:parse-format</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/daterangepicker/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/DateRangePicker_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/DateRangePicker_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>6. 日曆 - Calendar</h4>
+    <h4>
+        - 多項選擇 <code>Ctrl</code> 選擇日期，範圍選擇 <code>Shift</code> 選擇日期範圍 <code>:selectable</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/calendar/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/Calendar_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/Calendar_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>7. 多視圖日曆 - MultiViewCalendar</h4>
+    <h4>
+        - 控制同時顯示多少個月，默認為兩個月 <code>:views</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/dateinputs/multiviewcalendar/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/date-inputs/MultiViewCalendar_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/date-inputs/MultiViewCalendar_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>

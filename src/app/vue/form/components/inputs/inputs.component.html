@@ -1,67 +1,120 @@
-<h3>輸入 - Inputs</h3>
-<h4>選擇顏色 - ColorPicker</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/inputs/ColorPicker_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/inputs/ColorPicker_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>電話輸入 - MaskedTextbox</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/inputs/MaskedTextbox_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/inputs/MaskedTextbox_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>開關 - Switch</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/inputs/Switch_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/inputs/Switch_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>數字調整 - NumericTextBox</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/inputs/NumericTextBox_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/inputs/NumericTextBox_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>滑動調整 - Slider</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/inputs/Slider_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/inputs/Slider_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>間距滑動調整 - RangeSlider</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/inputs/RangeSlider_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/inputs/RangeSlider_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
+<div style="margin-bottom: 3%">
+    <h3>輸入 - Inputs</h3>
+    <h4>1. 選擇顏色 - ColorPicker</h4>
+    <h4>
+        - 可配合Button（按鈕）禁用該組件 <code>:disabled</code> 設為false
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/colorpicker/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/inputs/ColorPicker_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/inputs/ColorPicker_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>2. 電話輸入 - MaskedTextbox</h4>
+    <h4>
+        - 如果有客製化的需要使用 <code>mask</code> 屬性來設定，限制規則請參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/maskedtextbox/mask-rules/">這裡</a>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/maskedtextbox/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/inputs/MaskedTextbox_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/inputs/MaskedTextbox_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>3. 數字調整 - NumericTextBox</h4>
+    <h4>
+        - 用於數字上下限 <code>:min</code> 和 <code>:max</code>
+        <br>
+        - 用於禁用四捨五入可把 <code>:round</code> 設為false
+        <br>
+        - 用於顯示貨幣或百分比 <code>:format</code>
+        <br>
+        - 用於控制輸入數字的精度 <code>:decimals</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/numerictextbox/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/inputs/NumericTextBox_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/inputs/NumericTextBox_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>4. 滑動調整 - Slider</h4>
+    <h4>
+        - 用於數字上下限 <code>:min</code> 和 <code>:max</code>
+        <br>
+        - 用於滑塊的方向 <code>:orientation</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/slider/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/inputs/Slider_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/inputs/Slider_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>5. 間距滑動調整 - RangeSlider</h4>
+    <h4>
+        - 用於數字上下限 <code>:min</code> 和 <code>:max</code>
+        <br>
+        - 用於滑塊的方向 <code>:orientation</code>
+        <br>
+        - 用於初始的起訖值 <code>:selection-start</code> 和 <code>:selection-end</code>
+        <br>
+        - 用於工具提示的格式和位置 <code>:tooltip-format</code>
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/rangeslider/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/inputs/RangeSlider_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/inputs/RangeSlider_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+    <h4>6. 開關 - Switch</h4>
+    <h4>
+        - 用於初始開關的狀態 <code>:checked</code> 設為false
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/inputs-wrapper/switch/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/inputs/Switch_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/inputs/Switch_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>

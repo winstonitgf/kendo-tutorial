@@ -1,45 +1,28 @@
-<h3>Upload - 資料上傳</h3>
-<h4>上傳PDF - UploadPDF</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/upload/UploadPDF_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/upload/UploadPDF_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>上傳Image - UploadImage</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/upload/UploadImage_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/upload/UploadImage_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>上傳限制檔案大小 - UploadDocuments</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/upload/UploadDocuments_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/upload/UploadDocuments_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
-<h4>上傳目錄 - UploadDirectory</h4>
-<mat-card class="source-code-tab-card">
-    <mat-tab-group class="tab-source-code-background">
-        <mat-tab label="示例圖">
-            <img width="90%" src="assets/vue/form/upload/UploadDirectory_view.png" />
-        </mat-tab>
-        <mat-tab label="HTML">
-            <img width="60%" src="assets/vue/form/upload/UploadDirectory_html.png" />
-        </mat-tab>
-    </mat-tab-group>
-</mat-card>
+<div style="margin-bottom: 3%">
+    <h3>Upload - 資料上傳</h3>
+    <h4>上傳PDF - UploadPDF</h4>
+    <h4>
+        - 限制只能上傳PDF檔 <code>:validation-allowed-extensions='[".pdf"]'</code>
+        <br>
+        - 限制只能上傳圖片檔 <code>:validation-allowed-extensions='[".gif", ".jpg", ".png"]'</code>
+        <br>
+        - 限制只能上傳檔案大小 <code>:validation-max-file-size</code>
+        <br>
+        - 啟用選擇文件夾而不是文件的選擇 <code>:directory</code> 設為ture
+        <br>
+        - 允許在上載及其放置區域上放置文件夾 <code>:directory-drop</code> 設為ture
+        <br>
+        - 更多其他的設定可以參考
+        <a target="blank" href="https://www.telerik.com/kendo-vue-ui/components/upload/">這裡</a>
+    </h4>
+    <mat-card class="source-code-tab-card">
+        <mat-tab-group class="tab-source-code-background">
+            <mat-tab label="示例圖">
+                <img width="90%" src="assets/vue/form/upload/UploadPDF_view.png" />
+            </mat-tab>
+            <mat-tab label="HTML">
+                <img width="60%" src="assets/vue/form/upload/UploadPDF_html.png" />
+            </mat-tab>
+        </mat-tab-group>
+    </mat-card>
+</div>
